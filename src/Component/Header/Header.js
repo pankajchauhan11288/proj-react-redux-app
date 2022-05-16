@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-    const amount = useSelector(state => state.amount)
+  const amount = useSelector((state) => state.amount);
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -35,7 +35,9 @@ const Header = () => {
               </li>
             </ul>
             <div>
-                <button className="btn-danger" disabled>Your Balance : {amount}</button>
+              <button className="btn-danger" disabled>
+                Your Balance : {amount}
+              </button>
             </div>
           </div>
         </div>
